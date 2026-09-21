@@ -86,7 +86,9 @@ def test_web_panel_requires_auth_and_renders():
 
     client = app.test_client()
     assert client.get("/").status_code == 401
-    token = base64.b64encode(b"test-user:test-password").decode("ascii")
+    username = os.environ.get("PANEL_USER", "test-user")
+    password = os.environ.get("PANEL_PASS", "test-password")
+    token = base64.b64encode(f"{username}:{password}".encode()).decode("ascii")
     response = client.get("/", headers={"Authorization": f"Basic {token}"})
     assert response.status_code == 200
     assert b"BETAGENT" in response.data
