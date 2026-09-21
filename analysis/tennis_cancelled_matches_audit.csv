@@ -1,0 +1,4 @@
+bet_id,match,league,market,odds,actual_stake,actual_profit,actual_result,adj_stake,adj_profit,created_at,settled_at,correct
+872,Штруфф Я-Л vs Серундоло Ф,ATP. Мюнхен. Грунт,player1_win,5.1,480.0,0.0,cancelled,494.46,0.0,2026-04-12 05:23:31,2026-04-14 22:10:11,YES
+885,Коболли Ф vs Фучович М,ATP. Мюнхен. Грунт,player2_win,2.35,480.0,0.0,cancelled,487.36,0.0,2026-04-12 11:01:53,2026-04-14 22:10:11,YES
+911,Блинкова А vs Потапова А,WTA. Руан. Грунт,player1_win,3.7,480.0,0.0,cancelled,464.86,0.0,2026-04-12 18:01:55,2026-04-14 22:10:11,YES

@@ -1,0 +1,1412 @@
+{
+  "funnel": {
+    "DRAW_SA": {
+      "total_matches": 170,
+      "league_matches": 21,
+      "has_odds_count": 21,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895c610f0>",
+        "<sqlite3.Row object at 0x7ba895cc8940>",
+        "<sqlite3.Row object at 0x7ba895cc8a90>",
+        "<sqlite3.Row object at 0x7ba895cc8ac0>",
+        "<sqlite3.Row object at 0x7ba895cc8df0>",
+        "<sqlite3.Row object at 0x7ba895cc9000>",
+        "<sqlite3.Row object at 0x7ba895cc9270>",
+        "<sqlite3.Row object at 0x7ba895cc9450>",
+        "<sqlite3.Row object at 0x7ba895cc9480>",
+        "<sqlite3.Row object at 0x7ba895cc97e0>",
+        "<sqlite3.Row object at 0x7ba895cc9960>",
+        "<sqlite3.Row object at 0x7ba895cc9a20>",
+        "<sqlite3.Row object at 0x7ba895cc9a80>",
+        "<sqlite3.Row object at 0x7ba895cc9c60>",
+        "<sqlite3.Row object at 0x7ba895cc9e10>",
+        "<sqlite3.Row object at 0x7ba895cc9f60>",
+        "<sqlite3.Row object at 0x7ba895cca020>",
+        "<sqlite3.Row object at 0x7ba895cca110>",
+        "<sqlite3.Row object at 0x7ba895cca2c0>",
+        "<sqlite3.Row object at 0x7ba895cca350>",
+        "<sqlite3.Row object at 0x7ba895cca3b0>"
+      ],
+      "passed_all": 1,
+      "odds_range_fails": {
+        "draw_odds=2.35 not in [3.0,3.85]": 1,
+        "form_gap=6>3": 1,
+        "max_allowed=2.00>1.75": 1,
+        "table_diff=7>5": 1,
+        "draw_odds=4.60 not in [3.0,3.85]": 2,
+        "max_scored=2.20>1.55": 1,
+        "draw_odds=3.95 not in [3.0,3.85]": 1,
+        "table_diff=10>5": 1,
+        "no_table_diff": 8,
+        "draw_odds=4.05 not in [3.0,3.85]": 1,
+        "draw_odds=6.80 not in [3.0,3.85]": 1,
+        "draw_odds=2.80 not in [3.0,3.85]": 1
+      }
+    },
+    "DRAW_BALANCED_LOW_SCORING_SA": {
+      "total_matches": 170,
+      "league_matches": 21,
+      "has_odds_count": 21,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895c610f0>",
+        "<sqlite3.Row object at 0x7ba895cc8940>",
+        "<sqlite3.Row object at 0x7ba895cc8a90>",
+        "<sqlite3.Row object at 0x7ba895cc8ac0>",
+        "<sqlite3.Row object at 0x7ba895cc8df0>",
+        "<sqlite3.Row object at 0x7ba895cc9000>",
+        "<sqlite3.Row object at 0x7ba895cc9270>",
+        "<sqlite3.Row object at 0x7ba895cc9450>",
+        "<sqlite3.Row object at 0x7ba895cc9480>",
+        "<sqlite3.Row object at 0x7ba895cc97e0>",
+        "<sqlite3.Row object at 0x7ba895cc9960>",
+        "<sqlite3.Row object at 0x7ba895cc9a20>",
+        "<sqlite3.Row object at 0x7ba895cc9a80>",
+        "<sqlite3.Row object at 0x7ba895cc9c60>",
+        "<sqlite3.Row object at 0x7ba895cc9e10>",
+        "<sqlite3.Row object at 0x7ba895cc9f60>",
+        "<sqlite3.Row object at 0x7ba895cca020>",
+        "<sqlite3.Row object at 0x7ba895cca110>",
+        "<sqlite3.Row object at 0x7ba895cca2c0>",
+        "<sqlite3.Row object at 0x7ba895cca350>",
+        "<sqlite3.Row object at 0x7ba895cca3b0>"
+      ],
+      "passed_all": 1,
+      "odds_range_fails": {
+        "draw_odds=2.35 not in [3.0,3.6]": 1,
+        "form_gap=6>3": 1,
+        "max_allowed=2.00>1.65": 1,
+        "table_diff=7>6": 1,
+        "draw_odds=4.60 not in [3.0,3.6]": 2,
+        "max_scored=2.20>1.55": 1,
+        "draw_odds=3.95 not in [3.0,3.6]": 1,
+        "table_diff=10>6": 1,
+        "no_table_diff": 6,
+        "draw_odds=4.05 not in [3.0,3.6]": 1,
+        "draw_odds=6.80 not in [3.0,3.6]": 1,
+        "draw_odds=2.80 not in [3.0,3.6]": 1,
+        "draw_odds=3.70 not in [3.0,3.6]": 1,
+        "draw_odds=3.80 not in [3.0,3.6]": 1
+      }
+    },
+    "DRAW_BALANCED_LINE_SA": {
+      "total_matches": 170,
+      "league_matches": 21,
+      "has_odds_count": 21,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895c610f0>",
+        "<sqlite3.Row object at 0x7ba895cc8940>",
+        "<sqlite3.Row object at 0x7ba895cc8a90>",
+        "<sqlite3.Row object at 0x7ba895cc8ac0>",
+        "<sqlite3.Row object at 0x7ba895cc8df0>",
+        "<sqlite3.Row object at 0x7ba895cc9000>",
+        "<sqlite3.Row object at 0x7ba895cc9270>",
+        "<sqlite3.Row object at 0x7ba895cc9450>",
+        "<sqlite3.Row object at 0x7ba895cc9480>",
+        "<sqlite3.Row object at 0x7ba895cc97e0>",
+        "<sqlite3.Row object at 0x7ba895cc9960>",
+        "<sqlite3.Row object at 0x7ba895cc9a20>",
+        "<sqlite3.Row object at 0x7ba895cc9a80>",
+        "<sqlite3.Row object at 0x7ba895cc9c60>",
+        "<sqlite3.Row object at 0x7ba895cc9e10>",
+        "<sqlite3.Row object at 0x7ba895cc9f60>",
+        "<sqlite3.Row object at 0x7ba895cca020>",
+        "<sqlite3.Row object at 0x7ba895cca110>",
+        "<sqlite3.Row object at 0x7ba895cca2c0>",
+        "<sqlite3.Row object at 0x7ba895cca350>",
+        "<sqlite3.Row object at 0x7ba895cca3b0>"
+      ],
+      "passed_all": 1,
+      "odds_range_fails": {
+        "draw_odds=2.35 not in [3.05,3.65]": 1,
+        "form_gap=6>4": 1,
+        "odds_gap=1.65>0.95": 1,
+        "odds_gap=2.58>0.95": 1,
+        "draw_odds=4.60 not in [3.05,3.65]": 2,
+        "odds_gap=1.40>0.95": 1,
+        "draw_odds=3.95 not in [3.05,3.65]": 1,
+        "odds_gap=3.30>0.95": 1,
+        "no_table_diff": 2,
+        "draw_odds=3.00 not in [3.05,3.65]": 1,
+        "draw_odds=4.05 not in [3.05,3.65]": 1,
+        "draw_odds=6.80 not in [3.05,3.65]": 1,
+        "draw_odds=2.80 not in [3.05,3.65]": 1,
+        "draw_odds=3.70 not in [3.05,3.65]": 1,
+        "odds_gap=1.20>0.95": 1,
+        "draw_odds=3.80 not in [3.05,3.65]": 1,
+        "odds_gap=1.28>0.95": 1,
+        "odds_gap=1.30>0.95": 1
+      }
+    },
+    "SA_AWAY_DRAW": {
+      "total_matches": 170,
+      "league_matches": 21,
+      "has_odds_count": 21,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895c610f0>",
+        "<sqlite3.Row object at 0x7ba895cc8940>",
+        "<sqlite3.Row object at 0x7ba895cc8a90>",
+        "<sqlite3.Row object at 0x7ba895cc8ac0>",
+        "<sqlite3.Row object at 0x7ba895cc8df0>",
+        "<sqlite3.Row object at 0x7ba895cc9000>",
+        "<sqlite3.Row object at 0x7ba895cc9270>",
+        "<sqlite3.Row object at 0x7ba895cc9450>",
+        "<sqlite3.Row object at 0x7ba895cc9480>",
+        "<sqlite3.Row object at 0x7ba895cc97e0>",
+        "<sqlite3.Row object at 0x7ba895cc9960>",
+        "<sqlite3.Row object at 0x7ba895cc9a20>",
+        "<sqlite3.Row object at 0x7ba895cc9a80>",
+        "<sqlite3.Row object at 0x7ba895cc9c60>",
+        "<sqlite3.Row object at 0x7ba895cc9e10>",
+        "<sqlite3.Row object at 0x7ba895cc9f60>",
+        "<sqlite3.Row object at 0x7ba895cca020>",
+        "<sqlite3.Row object at 0x7ba895cca110>",
+        "<sqlite3.Row object at 0x7ba895cca2c0>",
+        "<sqlite3.Row object at 0x7ba895cca350>",
+        "<sqlite3.Row object at 0x7ba895cca3b0>"
+      ],
+      "passed_all": 0,
+      "odds_range_fails": {
+        "away=Удинезе not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 2,
+        "away=Милан not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 2,
+        "away=Кремонезе not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Верона not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Ювентус not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Сассуоло not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Наполи not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Лечче not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Интер Милан not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Лацио not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 2,
+        "away=Комо not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Кальяри not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Парма not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Аталанта not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Торино not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Дженоа not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Болонья not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1,
+        "away=Фиорентина not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}": 1
+      }
+    },
+    "AWAY_SA_STRICT_PLUS": {
+      "total_matches": 170,
+      "league_matches": 21,
+      "has_odds_count": 21,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895c610f0>",
+        "<sqlite3.Row object at 0x7ba895cc8940>",
+        "<sqlite3.Row object at 0x7ba895cc8a90>",
+        "<sqlite3.Row object at 0x7ba895cc8ac0>",
+        "<sqlite3.Row object at 0x7ba895cc8df0>",
+        "<sqlite3.Row object at 0x7ba895cc9000>",
+        "<sqlite3.Row object at 0x7ba895cc9270>",
+        "<sqlite3.Row object at 0x7ba895cc9450>",
+        "<sqlite3.Row object at 0x7ba895cc9480>",
+        "<sqlite3.Row object at 0x7ba895cc97e0>",
+        "<sqlite3.Row object at 0x7ba895cc9960>",
+        "<sqlite3.Row object at 0x7ba895cc9a20>",
+        "<sqlite3.Row object at 0x7ba895cc9a80>",
+        "<sqlite3.Row object at 0x7ba895cc9c60>",
+        "<sqlite3.Row object at 0x7ba895cc9e10>",
+        "<sqlite3.Row object at 0x7ba895cc9f60>",
+        "<sqlite3.Row object at 0x7ba895cca020>",
+        "<sqlite3.Row object at 0x7ba895cca110>",
+        "<sqlite3.Row object at 0x7ba895cca2c0>",
+        "<sqlite3.Row object at 0x7ba895cca350>",
+        "<sqlite3.Row object at 0x7ba895cca3b0>"
+      ],
+      "passed_all": 0,
+      "odds_range_fails": {
+        "away_odds=5.10 not in [2.05,2.85]": 2,
+        "away_odds=3.25 not in [2.05,2.85]": 1,
+        "away_odds=3.80 not in [2.05,2.85]": 1,
+        "away_odds=4.50 not in [2.05,2.85]": 1,
+        "away_odds=7.60 not in [2.05,2.85]": 1,
+        "pos_gap=-2>-4": 1,
+        "away_odds=3.55 not in [2.05,2.85]": 1,
+        "away_odds=1.58 not in [2.05,2.85]": 1,
+        "no_pos_gap": 4,
+        "away_odds=3.50 not in [2.05,2.85]": 1,
+        "away_odds=1.72 not in [2.05,2.85]": 1,
+        "away_odds=14.00 not in [2.05,2.85]": 1,
+        "away_odds=4.00 not in [2.05,2.85]": 1,
+        "away_odds=5.80 not in [2.05,2.85]": 1,
+        "away_odds=3.40 not in [2.05,2.85]": 1,
+        "away_odds=1.62 not in [2.05,2.85]": 1,
+        "away_odds=6.50 not in [2.05,2.85]": 1
+      }
+    },
+    "BTTS_YES_CORE": {
+      "total_matches": 170,
+      "league_matches": 43,
+      "has_odds_count": 43,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895c32b00>",
+        "<sqlite3.Row object at 0x7ba895cc8610>",
+        "<sqlite3.Row object at 0x7ba895cc8730>",
+        "<sqlite3.Row object at 0x7ba895cc86d0>",
+        "<sqlite3.Row object at 0x7ba895cc86a0>",
+        "<sqlite3.Row object at 0x7ba895cc8760>",
+        "<sqlite3.Row object at 0x7ba895cc8850>",
+        "<sqlite3.Row object at 0x7ba895cc8a00>",
+        "<sqlite3.Row object at 0x7ba895cc8bb0>",
+        "<sqlite3.Row object at 0x7ba895cc8be0>",
+        "<sqlite3.Row object at 0x7ba895cc8c10>",
+        "<sqlite3.Row object at 0x7ba895cc8c40>",
+        "<sqlite3.Row object at 0x7ba895cc8c70>",
+        "<sqlite3.Row object at 0x7ba895cc8ca0>",
+        "<sqlite3.Row object at 0x7ba895cc8eb0>",
+        "<sqlite3.Row object at 0x7ba895cc8f10>",
+        "<sqlite3.Row object at 0x7ba895cc93c0>",
+        "<sqlite3.Row object at 0x7ba895cc93f0>",
+        "<sqlite3.Row object at 0x7ba895cc9420>",
+        "<sqlite3.Row object at 0x7ba895cc9510>",
+        "<sqlite3.Row object at 0x7ba895cc9690>",
+        "<sqlite3.Row object at 0x7ba895cc96c0>",
+        "<sqlite3.Row object at 0x7ba895cc97b0>",
+        "<sqlite3.Row object at 0x7ba895cc9990>",
+        "<sqlite3.Row object at 0x7ba895cc9a50>",
+        "<sqlite3.Row object at 0x7ba895cc9c30>",
+        "<sqlite3.Row object at 0x7ba895cc9c90>",
+        "<sqlite3.Row object at 0x7ba895cc9cc0>",
+        "<sqlite3.Row object at 0x7ba895cc9cf0>",
+        "<sqlite3.Row object at 0x7ba895cc9d20>",
+        "<sqlite3.Row object at 0x7ba895cc9d80>",
+        "<sqlite3.Row object at 0x7ba895cc9db0>",
+        "<sqlite3.Row object at 0x7ba895cc9e70>",
+        "<sqlite3.Row object at 0x7ba895cc9ea0>",
+        "<sqlite3.Row object at 0x7ba895cc9f90>",
+        "<sqlite3.Row object at 0x7ba895cca080>",
+        "<sqlite3.Row object at 0x7ba895cca0b0>",
+        "<sqlite3.Row object at 0x7ba895cca0e0>",
+        "<sqlite3.Row object at 0x7ba895cca170>",
+        "<sqlite3.Row object at 0x7ba895cca260>",
+        "<sqlite3.Row object at 0x7ba895cca290>",
+        "<sqlite3.Row object at 0x7ba895cca320>",
+        "<sqlite3.Row object at 0x7ba895cca3e0>"
+      ],
+      "passed_all": 0,
+      "odds_range_fails": {
+        "btts_odds=1.40 not in [1.95,2.1]": 2,
+        "btts_odds=1.85 not in [2.0,2.1]": 1,
+        "btts_odds=1.52 not in [2.0,2.1]": 1,
+        "btts_odds=1.92 not in [1.95,2.1]": 1,
+        "btts_odds=1.55 not in [1.95,2.1]": 1,
+        "btts_odds=1.70 not in [1.95,2.1]": 4,
+        "btts_odds=1.65 not in [1.95,2.1]": 1,
+        "btts_odds=1.75 not in [2.0,2.1]": 3,
+        "btts_odds=1.50 not in [1.95,2.1]": 2,
+        "btts_odds=1.62 not in [1.95,2.1]": 1,
+        "btts_odds=1.73 not in [2.0,2.1]": 1,
+        "btts_odds=1.80 not in [2.0,2.1]": 2,
+        "btts_odds=1.58 not in [2.0,2.1]": 2,
+        "btts_odds=1.80 not in [1.95,2.1]": 1,
+        "btts_odds=1.60 not in [1.95,2.1]": 2,
+        "btts_odds=1.50 not in [2.0,2.1]": 1,
+        "btts_odds=1.67 not in [1.95,2.1]": 3,
+        "btts_odds=1.63 not in [1.95,2.1]": 1,
+        "btts_odds=1.72 not in [2.0,2.1]": 1,
+        "btts_odds=1.90 not in [1.95,2.1]": 1,
+        "btts_odds=1.63 not in [2.0,2.1]": 1,
+        "btts_odds=1.45 not in [1.95,2.1]": 2,
+        "btts_odds=1.47 not in [2.0,2.1]": 1,
+        "btts_odds=1.88 not in [2.0,2.1]": 1,
+        "btts_odds=1.60 not in [2.0,2.1]": 2,
+        "btts_odds=1.45 not in [2.0,2.1]": 1,
+        "btts_odds=1.87 not in [2.0,2.1]": 1,
+        "btts_odds=1.68 not in [2.0,2.1]": 1,
+        "btts_odds=1.67 not in [2.0,2.1]": 1
+      }
+    },
+    "RPL_OVER25_BTTS": {
+      "total_matches": 170,
+      "league_matches": 19,
+      "has_odds_count": 19,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895cc8670>",
+        "<sqlite3.Row object at 0x7ba895cc88e0>",
+        "<sqlite3.Row object at 0x7ba895cc8910>",
+        "<sqlite3.Row object at 0x7ba895cc89a0>",
+        "<sqlite3.Row object at 0x7ba895cc8b80>",
+        "<sqlite3.Row object at 0x7ba895cc8e80>",
+        "<sqlite3.Row object at 0x7ba895cc92a0>",
+        "<sqlite3.Row object at 0x7ba895cc94b0>",
+        "<sqlite3.Row object at 0x7ba895cc94e0>",
+        "<sqlite3.Row object at 0x7ba895cc9720>",
+        "<sqlite3.Row object at 0x7ba895cc98a0>",
+        "<sqlite3.Row object at 0x7ba895cc99f0>",
+        "<sqlite3.Row object at 0x7ba895cc9bd0>",
+        "<sqlite3.Row object at 0x7ba895cc9c00>",
+        "<sqlite3.Row object at 0x7ba895cc9d50>",
+        "<sqlite3.Row object at 0x7ba895cc9e40>",
+        "<sqlite3.Row object at 0x7ba895cca050>",
+        "<sqlite3.Row object at 0x7ba895cca1a0>",
+        "<sqlite3.Row object at 0x7ba895cca2f0>"
+      ],
+      "passed_all": 5,
+      "odds_range_fails": {
+        "over25=2.20 not in [1.8,2.1]": 3,
+        "over25=2.45 not in [1.8,2.1]": 1,
+        "over25=2.25 not in [1.8,2.1]": 4,
+        "over25=2.18 not in [1.8,2.1]": 1,
+        "over25=2.30 not in [1.8,2.1]": 1,
+        "btts=1.75 not in [1.8,2.1]": 1,
+        "over25=1.70 not in [1.8,2.1]": 1,
+        "form_pts home=3/away=3<4": 1,
+        "over25=2.15 not in [1.8,2.1]": 1
+      }
+    },
+    "PD_BTTS_DOUBLE": {
+      "total_matches": 170,
+      "league_matches": 23,
+      "has_odds_count": 23,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895cc8700>",
+        "<sqlite3.Row object at 0x7ba895cc87f0>",
+        "<sqlite3.Row object at 0x7ba895cc8820>",
+        "<sqlite3.Row object at 0x7ba895cc88b0>",
+        "<sqlite3.Row object at 0x7ba895cc8a30>",
+        "<sqlite3.Row object at 0x7ba895cc8dc0>",
+        "<sqlite3.Row object at 0x7ba895cc8ee0>",
+        "<sqlite3.Row object at 0x7ba895cc9030>",
+        "<sqlite3.Row object at 0x7ba895cc92d0>",
+        "<sqlite3.Row object at 0x7ba895cc9540>",
+        "<sqlite3.Row object at 0x7ba895cc9750>",
+        "<sqlite3.Row object at 0x7ba895cc9840>",
+        "<sqlite3.Row object at 0x7ba895cc99c0>",
+        "<sqlite3.Row object at 0x7ba895cca410>",
+        "<sqlite3.Row object at 0x7ba895cca440>",
+        "<sqlite3.Row object at 0x7ba895cca470>",
+        "<sqlite3.Row object at 0x7ba895cca4a0>",
+        "<sqlite3.Row object at 0x7ba895cca4d0>",
+        "<sqlite3.Row object at 0x7ba895cca500>",
+        "<sqlite3.Row object at 0x7ba895cca530>",
+        "<sqlite3.Row object at 0x7ba895cca560>",
+        "<sqlite3.Row object at 0x7ba895cca590>",
+        "<sqlite3.Row object at 0x7ba895cca5c0>"
+      ],
+      "passed_all": 1,
+      "odds_range_fails": {
+        "over25=2.05 not in [1.6,1.9]": 2,
+        "btts=10.00 not in [1.75,1.95]": 1,
+        "away_form_pts=3<6": 1,
+        "away_form_pts=5<6": 1,
+        "over25=2.00 not in [1.6,1.9]": 2,
+        "btts=1.63 not in [1.75,1.95]": 1,
+        "btts=1.70 not in [1.75,1.95]": 2,
+        "over25=2.20 not in [1.6,1.9]": 1,
+        "over25=1.98 not in [1.6,1.9]": 1,
+        "over25=1.95 not in [1.6,1.9]": 2,
+        "over25=1.55 not in [1.6,1.9]": 1,
+        "over25=2.15 not in [1.6,1.9]": 1,
+        "over25=2.17 not in [1.6,1.9]": 1,
+        "btts=1.65 not in [1.75,1.95]": 1,
+        "btts=2.05 not in [1.75,1.95]": 1,
+        "btts=1.60 not in [1.75,1.95]": 1,
+        "over25=2.45 not in [1.6,1.9]": 1,
+        "over25=2.12 not in [1.6,1.9]": 1
+      }
+    },
+    "FL1_BTTS_DOUBLE": {
+      "total_matches": 170,
+      "league_matches": 16,
+      "has_odds_count": 16,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895cc8790>",
+        "<sqlite3.Row object at 0x7ba895cc87c0>",
+        "<sqlite3.Row object at 0x7ba895cc8f40>",
+        "<sqlite3.Row object at 0x7ba895cc9060>",
+        "<sqlite3.Row object at 0x7ba895cc9630>",
+        "<sqlite3.Row object at 0x7ba895cc9660>",
+        "<sqlite3.Row object at 0x7ba895cc9810>",
+        "<sqlite3.Row object at 0x7ba895cc9ab0>",
+        "<sqlite3.Row object at 0x7ba895cc9de0>",
+        "<sqlite3.Row object at 0x7ba895cc9ed0>",
+        "<sqlite3.Row object at 0x7ba895cc9fc0>",
+        "<sqlite3.Row object at 0x7ba895cca140>",
+        "<sqlite3.Row object at 0x7ba895cca1d0>",
+        "<sqlite3.Row object at 0x7ba895cca200>",
+        "<sqlite3.Row object at 0x7ba895cca230>",
+        "<sqlite3.Row object at 0x7ba895cca380>"
+      ],
+      "passed_all": 0,
+      "odds_range_fails": {
+        "over25=2.12 not in [1.6,1.9]": 1,
+        "over25=2.08 not in [1.6,1.9]": 2,
+        "over25=2.25 not in [1.6,1.9]": 1,
+        "btts=1.95 not in [2.0,2.1]": 1,
+        "over25=1.95 not in [1.6,1.9]": 1,
+        "over25=2.20 not in [1.6,1.9]": 1,
+        "btts=1.87 not in [2.0,2.1]": 1,
+        "btts=1.75 not in [2.0,2.1]": 2,
+        "btts=1.65 not in [2.0,2.1]": 1,
+        "over25=2.35 not in [1.6,1.9]": 1,
+        "btts=1.85 not in [2.0,2.1]": 1,
+        "btts=1.55 not in [2.0,2.1]": 1,
+        "over25=2.00 not in [1.6,1.9]": 1,
+        "over25=2.13 not in [1.6,1.9]": 1
+      }
+    },
+    "NLA_BERN_AWAY_DRAW": {
+      "total_matches": 170,
+      "league_matches": 0,
+      "has_odds_count": 0,
+      "has_odds_list": [],
+      "passed_all": 0,
+      "odds_range_fails": {}
+    },
+    "MLS_BTTS_HOME": {
+      "total_matches": 170,
+      "league_matches": 18,
+      "has_odds_count": 15,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895cc8f70>",
+        "<sqlite3.Row object at 0x7ba895cc8fa0>",
+        "<sqlite3.Row object at 0x7ba895cc8fd0>",
+        "<sqlite3.Row object at 0x7ba895cc9090>",
+        "<sqlite3.Row object at 0x7ba895cc90c0>",
+        "<sqlite3.Row object at 0x7ba895cc90f0>",
+        "<sqlite3.Row object at 0x7ba895cc9120>",
+        "<sqlite3.Row object at 0x7ba895cc9150>",
+        "<sqlite3.Row object at 0x7ba895cc9180>",
+        "<sqlite3.Row object at 0x7ba895cc91b0>",
+        "<sqlite3.Row object at 0x7ba895cc91e0>",
+        "<sqlite3.Row object at 0x7ba895cc9210>",
+        "<sqlite3.Row object at 0x7ba895cc9240>",
+        "<sqlite3.Row object at 0x7ba895cc9870>",
+        "<sqlite3.Row object at 0x7ba895cc9ba0>"
+      ],
+      "passed_all": 1,
+      "odds_range_fails": {
+        "home=Торонто not in MLS list": 1,
+        "home=Монреаль not in MLS list": 1,
+        "home=Остин not in MLS list": 1,
+        "home=Шарлотт not in MLS list": 1,
+        "home=Нью-Ингленд Революшн not in MLS list": 1,
+        "home=Ванкувер Уайткэпс not in MLS list": 2,
+        "btts=1.45 not in [1.50,1.75]": 1,
+        "home=Спортинг Канзас Сити not in MLS list": 1,
+        "home=Чикаго Файр not in MLS list": 1,
+        "home=Даллас not in MLS list": 1,
+        "home=Колорадо Рэпидс not in MLS list": 1,
+        "home=Сан-Диего not in MLS list": 1,
+        "home=Коламбус Кру not in MLS list": 1
+      }
+    },
+    "PD_AWAY_VALUE": {
+      "total_matches": 170,
+      "league_matches": 23,
+      "has_odds_count": 23,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895cc8700>",
+        "<sqlite3.Row object at 0x7ba895cc87f0>",
+        "<sqlite3.Row object at 0x7ba895cc8820>",
+        "<sqlite3.Row object at 0x7ba895cc88b0>",
+        "<sqlite3.Row object at 0x7ba895cc8a30>",
+        "<sqlite3.Row object at 0x7ba895cc8dc0>",
+        "<sqlite3.Row object at 0x7ba895cc8ee0>",
+        "<sqlite3.Row object at 0x7ba895cc9030>",
+        "<sqlite3.Row object at 0x7ba895cc92d0>",
+        "<sqlite3.Row object at 0x7ba895cc9540>",
+        "<sqlite3.Row object at 0x7ba895cc9750>",
+        "<sqlite3.Row object at 0x7ba895cc9840>",
+        "<sqlite3.Row object at 0x7ba895cc99c0>",
+        "<sqlite3.Row object at 0x7ba895cca410>",
+        "<sqlite3.Row object at 0x7ba895cca440>",
+        "<sqlite3.Row object at 0x7ba895cca470>",
+        "<sqlite3.Row object at 0x7ba895cca4a0>",
+        "<sqlite3.Row object at 0x7ba895cca4d0>",
+        "<sqlite3.Row object at 0x7ba895cca500>",
+        "<sqlite3.Row object at 0x7ba895cca530>",
+        "<sqlite3.Row object at 0x7ba895cca560>",
+        "<sqlite3.Row object at 0x7ba895cca590>",
+        "<sqlite3.Row object at 0x7ba895cca5c0>"
+      ],
+      "passed_all": 1,
+      "odds_range_fails": {
+        "away_odds=3.75 not in [2.00,2.50]": 1,
+        "away_odds=15.00 not in [2.00,2.50]": 1,
+        "away_odds=5.70 not in [2.00,2.50]": 1,
+        "away_odds=4.60 not in [2.00,2.50]": 1,
+        "away_odds=4.90 not in [2.00,2.50]": 1,
+        "away_odds=2.90 not in [2.00,2.50]": 1,
+        "away_odds=8.50 not in [2.00,2.50]": 1,
+        "away_odds=2.85 not in [2.00,2.50]": 2,
+        "away_odds=3.25 not in [2.00,2.50]": 1,
+        "away_odds=3.10 not in [2.00,2.50]": 3,
+        "away_odds=4.80 not in [2.00,2.50]": 2,
+        "away_odds=2.95 not in [2.00,2.50]": 1,
+        "away_odds=4.50 not in [2.00,2.50]": 1,
+        "away_odds=10.50 not in [2.00,2.50]": 1,
+        "away_odds=1.98 not in [2.00,2.50]": 1,
+        "away_odds=8.00 not in [2.00,2.50]": 1,
+        "away_odds=4.40 not in [2.00,2.50]": 1,
+        "away_odds=1.85 not in [2.00,2.50]": 1
+      }
+    },
+    "SUMMER_BTTS_HOME": {
+      "total_matches": 170,
+      "league_matches": 30,
+      "has_odds_count": 30,
+      "has_odds_list": [
+        "<sqlite3.Row object at 0x7ba895cc8970>",
+        "<sqlite3.Row object at 0x7ba895cc89d0>",
+        "<sqlite3.Row object at 0x7ba895cc8a60>",
+        "<sqlite3.Row object at 0x7ba895cc8af0>",
+        "<sqlite3.Row object at 0x7ba895cc8b20>",
+        "<sqlite3.Row object at 0x7ba895cc8b50>",
+        "<sqlite3.Row object at 0x7ba895cc8cd0>",
+        "<sqlite3.Row object at 0x7ba895cc8d00>",
+        "<sqlite3.Row object at 0x7ba895cc8d30>",
+        "<sqlite3.Row object at 0x7ba895cc8d60>",
+        "<sqlite3.Row object at 0x7ba895cc8d90>",
+        "<sqlite3.Row object at 0x7ba895cc8e20>",
+        "<sqlite3.Row object at 0x7ba895cc8e50>",
+        "<sqlite3.Row object at 0x7ba895cc9300>",
+        "<sqlite3.Row object at 0x7ba895cc9330>",
+        "<sqlite3.Row object at 0x7ba895cc9360>",
+        "<sqlite3.Row object at 0x7ba895cc9390>",
+        "<sqlite3.Row object at 0x7ba895cc9570>",
+        "<sqlite3.Row object at 0x7ba895cc95a0>",
+        "<sqlite3.Row object at 0x7ba895cc95d0>",
+        "<sqlite3.Row object at 0x7ba895cc9600>",
+        "<sqlite3.Row object at 0x7ba895cc96f0>",
+        "<sqlite3.Row object at 0x7ba895cc9780>",
+        "<sqlite3.Row object at 0x7ba895cc98d0>",
+        "<sqlite3.Row object at 0x7ba895cc9900>",
+        "<sqlite3.Row object at 0x7ba895cc9930>",
+        "<sqlite3.Row object at 0x7ba895cc9ae0>",
+        "<sqlite3.Row object at 0x7ba895cc9b10>",
+        "<sqlite3.Row object at 0x7ba895cc9b40>",
+        "<sqlite3.Row object at 0x7ba895cc9b70>"
+      ],
+      "passed_all": 1,
+      "odds_range_fails": {
+        "home=КуПС Куопио not in summer list": 1,
+        "league_key=NOR not in summer": 8,
+        "home=Гетеборг not in summer list": 1,
+        "home=Мьельбю not in summer list": 1,
+        "home=Вестерос not in summer list": 1,
+        "home=ХИК Хельсинки not in summer list": 1,
+        "league_key=IRL not in summer": 7,
+        "home=Интер Турку not in summer list": 1,
+        "home=Силькеборг not in summer list": 1,
+        "home=Хальмстад not in summer list": 1,
+        "home=Юргорден not in summer list": 1,
+        "home=Мальме not in summer list": 1,
+        "home=Раннерс not in summer list": 1,
+        "home=Фредерисия not in summer list": 1,
+        "home=Сириус not in summer list": 1,
+        "home=Броммапойкарна not in summer list": 1
+      }
+    }
+  },
+  "low_data": {
+    "SUMMER_BTTS_HOME": {
+      "total_in_league": 30,
+      "passed": 1,
+      "fail_reasons": {
+        "league_key=NOR not in summer": 8,
+        "league_key=IRL not in summer": 7,
+        "home=КуПС Куопио not in summer list": 1,
+        "home=Гетеборг not in summer list": 1,
+        "home=Мьельбю not in summer list": 1,
+        "home=Вестерос not in summer list": 1,
+        "home=ХИК Хельсинки not in summer list": 1,
+        "home=Интер Турку not in summer list": 1,
+        "home=Силькеборг not in summer list": 1,
+        "home=Хальмстад not in summer list": 1,
+        "home=Юргорден not in summer list": 1,
+        "home=Мальме not in summer list": 1,
+        "home=Раннерс not in summer list": 1,
+        "home=Фредерисия not in summer list": 1,
+        "home=Сириус not in summer list": 1,
+        "home=Броммапойкарна not in summer list": 1
+      }
+    },
+    "MLS_BTTS_HOME": {
+      "total_in_league": 18,
+      "passed": 1,
+      "fail_reasons": {
+        "no_btts_odds": 3,
+        "home=Ванкувер Уайткэпс not in MLS list": 2,
+        "home=Торонто not in MLS list": 1,
+        "home=Монреаль not in MLS list": 1,
+        "home=Остин not in MLS list": 1,
+        "home=Шарлотт not in MLS list": 1,
+        "home=Нью-Ингленд Революшн not in MLS list": 1,
+        "btts=1.45 not in [1.50,1.75]": 1,
+        "home=Спортинг Канзас Сити not in MLS list": 1,
+        "home=Чикаго Файр not in MLS list": 1,
+        "home=Даллас not in MLS list": 1,
+        "home=Колорадо Рэпидс not in MLS list": 1,
+        "home=Сан-Диего not in MLS list": 1,
+        "home=Коламбус Кру not in MLS list": 1
+      }
+    },
+    "PD_AWAY_VALUE": {
+      "total_in_league": 23,
+      "passed": 1,
+      "fail_reasons": {
+        "away_odds=3.10 not in [2.00,2.50]": 3,
+        "away_odds=2.85 not in [2.00,2.50]": 2,
+        "away_odds=4.80 not in [2.00,2.50]": 2,
+        "away_odds=3.75 not in [2.00,2.50]": 1,
+        "away_odds=15.00 not in [2.00,2.50]": 1,
+        "away_odds=5.70 not in [2.00,2.50]": 1,
+        "away_odds=4.60 not in [2.00,2.50]": 1,
+        "away_odds=4.90 not in [2.00,2.50]": 1,
+        "away_odds=2.90 not in [2.00,2.50]": 1,
+        "away_odds=8.50 not in [2.00,2.50]": 1,
+        "away_odds=3.25 not in [2.00,2.50]": 1,
+        "away_odds=2.95 not in [2.00,2.50]": 1,
+        "away_odds=4.50 not in [2.00,2.50]": 1,
+        "away_odds=10.50 not in [2.00,2.50]": 1,
+        "away_odds=1.98 not in [2.00,2.50]": 1,
+        "away_odds=8.00 not in [2.00,2.50]": 1,
+        "away_odds=4.40 not in [2.00,2.50]": 1,
+        "away_odds=1.85 not in [2.00,2.50]": 1
+      }
+    },
+    "NLA_BERN_AWAY_DRAW": {
+      "total_in_league": 0,
+      "passed": 0,
+      "fail_reasons": {}
+    }
+  },
+  "nearest": [
+    {
+      "home": "Лейпциг",
+      "away": "Хоффенхайм",
+      "league": "Германия. Бундеслига. Сезон 25/26",
+      "date": "2026-03-20 19:30",
+      "odds": {
+        "home": 1.9,
+        "draw": 4.05,
+        "away": 3.65,
+        "over_2_5": 2.03,
+        "btts_yes": 1.4,
+        "under_2_5": 1.78
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.40 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=BUNDESLIGA not in summer"
+        }
+      }
+    },
+    {
+      "home": "Дженоа",
+      "away": "Удинезе",
+      "league": "Италия. Серия А. Сезон 25/26",
+      "date": "2026-03-20 19:45",
+      "odds": {
+        "home": 2.35,
+        "draw": 2.35,
+        "away": 5.1,
+        "over_2_5": 2.6,
+        "btts_yes": 4.15,
+        "under_2_5": 1.5
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "draw_odds=2.35 not in [3.0,3.85]"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "draw_odds=2.35 not in [3.0,3.6]"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "draw_odds=2.35 not in [3.05,3.65]"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "away=Удинезе not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "away_odds=5.10 not in [2.05,2.85]"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=4.15 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=SERIE_A not in summer"
+        }
+      }
+    },
+    {
+      "home": "Борнмут",
+      "away": "Манчестер Юнайтед",
+      "league": "Англия. Премьер-Лига. Сезон 25/26",
+      "date": "2026-03-20 20:00",
+      "odds": {
+        "home": 3.25,
+        "draw": 3.4,
+        "away": 2.2,
+        "over_2_5": 2.03,
+        "btts_yes": 1.85,
+        "under_2_5": 1.8
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.85 not in [2.0,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=EPL not in summer"
+        }
+      }
+    },
+    {
+      "home": "Ахмат",
+      "away": "Ростов",
+      "league": "Россия. Премьер-Лига. Сезон 25/26",
+      "date": "2026-03-21 10:45",
+      "odds": {
+        "home": 1.4,
+        "draw": 3.95,
+        "away": 11.0,
+        "over_2_5": 2.2,
+        "btts_yes": 1.92,
+        "under_2_5": 1.65
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.92 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "over25=2.20 not in [1.8,2.1]"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=RPL not in summer"
+        }
+      }
+    },
+    {
+      "home": "Брайтон",
+      "away": "Ливерпуль",
+      "league": "Англия. Премьер-Лига. Сезон 25/26",
+      "date": "2026-03-21 12:30",
+      "odds": {
+        "home": 3.2,
+        "draw": 3.75,
+        "away": 2.15,
+        "over_2_5": 1.62,
+        "btts_yes": 1.52,
+        "under_2_5": 2.3
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.52 not in [2.0,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=EPL not in summer"
+        }
+      }
+    },
+    {
+      "home": "Эльче",
+      "away": "Мальорка",
+      "league": "Испания. Примера дивизион. Сезон 25/26",
+      "date": "2026-03-21 13:00",
+      "odds": {
+        "home": 2.07,
+        "draw": 3.35,
+        "away": 3.75,
+        "over_2_5": 2.05,
+        "btts_yes": 1.82,
+        "under_2_5": 1.77
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.82 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "over25=2.05 not in [1.6,1.9]"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "away_odds=3.75 not in [2.00,2.50]"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=LALIGA not in summer"
+        }
+      }
+    },
+    {
+      "home": "Бавария",
+      "away": "Унион Берлин",
+      "league": "Германия. Бундеслига. Сезон 25/26",
+      "date": "2026-03-21 14:30",
+      "odds": {
+        "home": 1.15,
+        "draw": 8.5,
+        "away": 16.0,
+        "over_2_5": 1.8,
+        "btts_yes": 1.92,
+        "under_2_5": 2.02
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.92 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=BUNDESLIGA not in summer"
+        }
+      }
+    },
+    {
+      "home": "Вольфсбург",
+      "away": "Вердер",
+      "league": "Германия. Бундеслига. Сезон 25/26",
+      "date": "2026-03-21 14:30",
+      "odds": {
+        "home": 2.4,
+        "draw": 3.65,
+        "away": 2.8,
+        "over_2_5": 1.67,
+        "btts_yes": 1.55,
+        "under_2_5": 2.2
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.55 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=BUNDESLIGA not in summer"
+        }
+      }
+    },
+    {
+      "home": "Кельн",
+      "away": "Боруссия Менхенгладбах",
+      "league": "Германия. Бундеслига. Сезон 25/26",
+      "date": "2026-03-21 14:30",
+      "odds": {
+        "home": 2.35,
+        "draw": 3.35,
+        "away": 3.05,
+        "over_2_5": 1.92,
+        "btts_yes": 1.7,
+        "under_2_5": 1.88
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.70 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_fl1"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=BUNDESLIGA not in summer"
+        }
+      }
+    },
+    {
+      "home": "Тулуза",
+      "away": "Лорьян",
+      "league": "Франция. Лига 1. Сезон 25/26",
+      "date": "2026-03-21 16:00",
+      "odds": {
+        "home": 1.85,
+        "draw": 3.35,
+        "away": 4.9,
+        "over_2_5": 2.12,
+        "btts_yes": 1.9,
+        "under_2_5": 1.72
+      },
+      "rules": {
+        "DRAW_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LOW_SCORING_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "DRAW_BALANCED_LINE_SA": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "SA_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "AWAY_SA_STRICT_PLUS": {
+          "passed": false,
+          "fail_reason": "not_serie_a"
+        },
+        "BTTS_YES_CORE": {
+          "passed": false,
+          "fail_reason": "btts_odds=1.90 not in [1.95,2.1]"
+        },
+        "RPL_OVER25_BTTS": {
+          "passed": false,
+          "fail_reason": "not_rpl"
+        },
+        "PD_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "FL1_BTTS_DOUBLE": {
+          "passed": false,
+          "fail_reason": "over25=2.12 not in [1.6,1.9]"
+        },
+        "NLA_BERN_AWAY_DRAW": {
+          "passed": false,
+          "fail_reason": "not_nla"
+        },
+        "MLS_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "not_mls"
+        },
+        "PD_AWAY_VALUE": {
+          "passed": false,
+          "fail_reason": "not_pd"
+        },
+        "SUMMER_BTTS_HOME": {
+          "passed": false,
+          "fail_reason": "league_key=LIGUE_1 not in summer"
+        }
+      }
+    }
+  ],
+  "bottlenecks": {
+    "DRAW_SA": "OK (1 matches)",
+    "DRAW_BALANCED_LOW_SCORING_SA": "OK (1 matches)",
+    "DRAW_BALANCED_LINE_SA": "OK (1 matches)",
+    "SA_AWAY_DRAW": [
+      "away=Удинезе not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}: 2",
+      "away=Милан not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}: 2",
+      "away=Лацио not in {'Salernitana', 'Empoli', 'Venezia', 'Genoa', 'Cremonese'}: 2"
+    ],
+    "AWAY_SA_STRICT_PLUS": [
+      "no_pos_gap: 4",
+      "away_odds=5.10 not in [2.05,2.85]: 2",
+      "away_odds=3.25 not in [2.05,2.85]: 1"
+    ],
+    "BTTS_YES_CORE": [
+      "btts_odds=1.70 not in [1.95,2.1]: 4",
+      "btts_odds=1.75 not in [2.0,2.1]: 3",
+      "btts_odds=1.67 not in [1.95,2.1]: 3"
+    ],
+    "RPL_OVER25_BTTS": "OK (5 matches)",
+    "PD_BTTS_DOUBLE": "OK (1 matches)",
+    "FL1_BTTS_DOUBLE": [
+      "over25=2.08 not in [1.6,1.9]: 2",
+      "btts=1.75 not in [2.0,2.1]: 2",
+      "over25=2.12 not in [1.6,1.9]: 1"
+    ],
+    "NLA_BERN_AWAY_DRAW": "NO_MATCHES_IN_LEAGUE",
+    "MLS_BTTS_HOME": "OK (1 matches)",
+    "PD_AWAY_VALUE": "OK (1 matches)",
+    "SUMMER_BTTS_HOME": "OK (1 matches)"
+  },
+  "expansions": {
+    "SA_AWAY_DRAW": {
+      "current_passed": 0,
+      "relaxed_would_pass": 0
+    },
+    "AWAY_SA_STRICT_PLUS": {
+      "current_passed": 0,
+      "relaxed_would_pass": 0
+    },
+    "BTTS_YES_CORE": {
+      "current_passed": 0,
+      "relaxed_would_pass": 0
+    },
+    "FL1_BTTS_DOUBLE": {
+      "current_passed": 0,
+      "relaxed_would_pass": 1
+    },
+    "NLA_BERN_AWAY_DRAW": {
+      "current_passed": 0,
+      "relaxed_would_pass": 0
+    }
+  },
+  "total_matches": 170,
+  "timestamp": "2026-04-11T09:02:51.167584"
+}

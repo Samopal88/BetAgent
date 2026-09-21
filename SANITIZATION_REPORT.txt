@@ -1,0 +1,58 @@
+BetAgent CLEAN archive sanitization report
+Created: 2026-09-21 07:11:18 UTC
+
+Removed runtime/local artifacts:
+- .claude/settings.local.json
+- pari=3.25
+- pari=3.55
+- pipeline.log.1
+- pipeline.log.2.gz
+- pipeline.log.3.gz
+- pipeline.log.4.gz
+- pipeline.log.5.gz
+- pipeline.log.6.gz
+- pipeline.log.7.gz
+- profile.txt
+- shadow.log.1
+- shadow.log.2.gz
+- shadow.log.3.gz
+- shadow.log.4.gz
+- shadow.log.5.gz
+- shadow.log.6.gz
+- shadow.log.7.gz
+- tg_bot.log.1
+
+Files with credential-like values redacted:
+- README_AGENT_HANDOFF.txt
+- analysis/full_project_architecture_audit.md
+- analysis/live_pipeline_diagnosis.md
+- api/auth.py
+- check_claude_gateway.sh
+- enricher.py
+- enricher_football.py
+- find_fixtures.py
+- injuries_fetcher.py
+- lineups_fetcher.py
+- odds_api_parser.py
+- probe_allsports2.py
+- probe_allsports_api.py
+- probe_api_football.py
+- probe_api_hockey.py
+- probe_football_sources_fixed.py
+- probe_hockey_endpoints.py
+- run_betagent.bat
+- run_pipeline.py
+- run_pipeline.py.fixed
+- run_pipeline.py.fixed.v3
+- run_pipeline_clv_patch.diff
+- start_bot.bat
+- test_fixtures.py
+- web_panel.py
+
+Validation policy:
+- No .env, databases, private keys, local Claude settings, sessions/cookies, or runtime logs.
+- Known hardcoded credentials replaced with <REDACTED> or empty getenv defaults.
+- .env.example contains variable names only.
+
+- apply_patch.py (corrupted all-zero file)
+- Launch/probe scripts were converted to environment-based credentials where hardcoded keys had existed.

@@ -1,0 +1,166 @@
+{
+  "hockey": {
+    "no_lineup_cap": 0.58,
+    "weak_no_lineup_cap": 0.55,
+    "lineup_cap": 0.70,
+
+    "no_h2h_penalty": 0.02,
+    "short_form_penalty_3": 0.03,
+    "short_form_penalty_5": 0.01,
+
+    "medium_no_lineup_penalty": 0.00,
+    "weak_no_lineup_penalty": 0.01,
+
+    "lineups_missing_penalty": 0.00,
+    "injuries_missing_penalty": 0.00,
+
+    "allow_medium_without_lineups": true,
+    "allow_strong_without_lineups": false,
+
+    "min_edge_vs_market": 0.03,
+    "min_ev": 0.03,
+    "probability_floor": 0.38,
+
+    "preflight_rules": {
+      "require_any_data": true,
+      "min_form_for_llm": 2,
+      "block_if_no_h2h_and_short_form_and_no_lineups": false,
+      "min_form_threshold_for_block": 2
+    },
+    "notes": [
+      "Составы и травмы в КХЛ/НХЛ системно недоступны — это НОРМА, не аномалия",
+      "Medium без lineups разрешён — это базовый режим хоккейных данных",
+      "Strong без доп.подтверждения (вратарь/ключевой травмированный) запрещён",
+      "Жёсткость держать через: форму, таблицу, голы, мотивацию, edge",
+      "Если форма < 3 → жёсткий штраф -0.03",
+      "Если H2H пуст + форма < 3 → дополнительный штраф -0.02",
+      "Конец регулярки КХЛ: мотивация критична — команды вне плей-офф зоны могут не стараться"
+    ]
+  },
+  "football": {
+    "no_lineup_cap": 0.57,
+    "weak_no_lineup_cap": 0.54,
+    "lineup_cap": 0.72,
+    "no_h2h_penalty": 0.01,
+    "short_form_penalty_3": 0.02,
+    "short_form_penalty_5": 0.01,
+
+    "medium_no_lineup_penalty": 0.01,
+    "weak_no_lineup_penalty": 0.02,
+
+    "lineups_missing_penalty": 0.01,
+    "injuries_missing_penalty": 0.02,
+
+    "allow_medium_without_lineups": true,
+    "allow_strong_without_lineups": false,
+    "away_goals_allowed_threshold": 1.8,
+    "draw_max_odds_without_lineups": 4.5,
+    "draw_max_table_diff": 5,
+    "draw_max_attack_avg": 1.7,
+
+    "league_confidence": {
+      "Италия. Серия А. Сезон 25/26":              1.15,
+      "Германия. Бундеслига. Сезон 25/26":         1.10,
+      "Россия. Премьер-Лига. Сезон 25/26":         1.00,
+      "Франция. Лига 1. Сезон 25/26":              0.92,
+      "Испания. Примера дивизион. Сезон 25/26":    0.90,
+      "Англия. Премьер-Лига. Сезон 25/26":         0.82
+    },
+
+    "min_edge_vs_market": 0.025,
+    "min_ev": 0.03,
+    "probability_floor": 0.36,
+
+    "preflight_rules": {
+      "require_any_data": true,
+      "min_form_for_llm": 3,
+      "block_if_no_h2h_and_short_form_and_no_lineups": false,
+      "min_form_threshold_for_block": 3,
+      "require_injuries_for_medium_without_lineups": false,
+      "require_table_for_medium_without_lineups": true
+    },
+    "notes": [
+      "lineups — поздний сигнал (за 1ч до матча), не блокирует ранний анализ",
+      "injuries — ранний сигнал, доступен с утра через injuries_fetcher.py",
+      "Medium без lineups: форма 3+, таблица есть, edge ≥ 0.025",
+      "Strong без confirmed lineups невозможен",
+      "away_goals_allowed > 1.8 без составов → авто-PASS",
+      "Ничья (X): разница таблицы ≤ 5 мест, атака обеих < 1.7, коэф 3.0-4.5",
+      "Ничья: атака > 1.7 г/матч у одной команды → авто PASS",
+      "Ничья: разница в таблице > 5 мест → авто PASS",
+      "Ничья: коэф > 4.5 без составов → авто PASS"
+    ]
+  },
+  "tennis": {
+    "no_lineup_cap": 0.65,
+    "weak_no_lineup_cap": 0.62,
+    "lineup_cap": 0.75,
+    "no_h2h_penalty": 0.00,
+    "short_form_penalty_3": 0.02,
+    "short_form_penalty_5": 0.01,
+    "medium_no_lineup_penalty": 0.00,
+    "weak_no_lineup_penalty": 0.01,
+    "min_edge_vs_market": 0.02,
+    "min_ev": 0.03,
+    "probability_floor": 0.40,
+    "preflight_rules": {
+      "require_any_data": true,
+      "min_form_for_llm": 2,
+      "block_if_no_h2h_and_short_form_and_no_lineups": false,
+      "min_form_threshold_for_block": 2
+    },
+    "notes": [
+      "H2H на конкретном покрытии важнее общего H2H",
+      "Составов как таковых нет — penalty не применяется",
+      "Форма на текущем покрытии важнее общей формы"
+    ]
+  },
+  "mma": {
+    "no_lineup_cap": 0.62,
+    "weak_no_lineup_cap": 0.58,
+    "lineup_cap": 0.72,
+    "no_h2h_penalty": 0.00,
+    "short_form_penalty_3": 0.02,
+    "short_form_penalty_5": 0.01,
+    "medium_no_lineup_penalty": 0.01,
+    "weak_no_lineup_penalty": 0.02,
+    "min_edge_vs_market": 0.025,
+    "min_ev": 0.03,
+    "probability_floor": 0.38,
+    "preflight_rules": {
+      "require_any_data": true,
+      "min_form_for_llm": 1,
+      "block_if_no_h2h_and_short_form_and_no_lineups": false,
+      "min_form_threshold_for_block": 2
+    },
+    "notes": [
+      "Стиль боя и matchup важнее формы",
+      "Нокаут-способность учитывать отдельно",
+      "Injury/weight cut — критические факторы"
+    ]
+  },
+  "esports": {
+    "no_lineup_cap": 0.60,
+    "weak_no_lineup_cap": 0.57,
+    "lineup_cap": 0.70,
+    "no_h2h_penalty": 0.01,
+    "short_form_penalty_3": 0.02,
+    "short_form_penalty_5": 0.01,
+    "medium_no_lineup_penalty": 0.01,
+    "weak_no_lineup_penalty": 0.02,
+    "min_edge_vs_market": 0.02,
+    "min_ev": 0.03,
+    "probability_floor": 0.37,
+    "preflight_rules": {
+      "require_any_data": true,
+      "min_form_for_llm": 2,
+      "block_if_no_h2h_and_short_form_and_no_lineups": true,
+      "min_form_threshold_for_block": 3
+    },
+    "notes": [
+      "Состав роста важен — замены меняют всё",
+      "Патч игры влияет на meta — учитывать версию",
+      "Форма последних 10 матчей важнее последних 5"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+-r requirements.txt
+pip-audit>=2.9,<3
+pytest>=8.4,<10
+httpx>=0.28,<1

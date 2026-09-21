@@ -1,0 +1,62 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Runtime state
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+*.log.*
+*.pid
+logs/
+reports/
+run_summaries/
+tests_output/
+.cache_khl/
+.claude_gateway_state
+
+# Generated research data and training output
+data/*.csv
+ml_output/
+backtest_llm_results.json
+features_ml_v1_report.json
+strategy_chart_export.json
+
+# Historical local patch/backup files
+*.bak*
+*.fixed
+*.fixed.*
+*.diff
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.aider*
+
+# Accidental empty files created by shell redirection/package parsing
+[ ]
+=*
+pari
+pari=*
+.codex

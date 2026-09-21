@@ -1,0 +1,161 @@
+# Sub-market Filter Analysis — Report
+
+## Overview
+
+Tested rolling-average filters (last 5 matches, corners/YC/shots) against 7 betting strategies.
+Filter qualifies if: ROI improves >5pp, positive ROI in 4/5 years, n>=15 per year.
+
+**Team name mapping**: backtest_matches uses English names (e.g. "Empoli"), backtest_football_stats uses Russian (e.g. "Эмполи"). Mapped ~155 teams across 5 leagues.
+**MLS**: No stats data available — cannot test MLS_BTTS_HOME.
+**Data coverage**: SA=1841, EPL=1867, BL1=1483, FL1=1633, PD=1832, RPL=1137 rows.
+
+---
+
+## Results by Strategy
+
+### 1. SA_AWAY_DRAW (SA, draw @ 3.0-4.5, away teams: Empoli/Genoa/Cremonese/Salernitana/Venezia)
+
+| | n | hit% | ROI |
+|---|---|---|---|
+| **BASELINE** | 137 | 40.1% | +39.8% |
+| D: home_corners<=4.5 & away_corners>=3.5 | 41 | 43.9% | +51.0% |
+| B: home_shots<=5.0 | 112 | 40.2% | +38.7% |
+| A: home_corners<=4.5 | 65 | 40.0% | +37.3% |
+
+Filter D gives +11.2pp ROI improvement — good direction, but n=41 (≈8/year) is too small.
+The strategy is already extremely profitable at +39.8% ROI. Any filter that reduces n
+makes it harder to bet without meaningfully improving per-bet ROI.
+
+**RECOMMENDATION: NO** — baseline ROI 39.8% is already exceptional; no filter improves enough.
+
+---
+
+### 2. BTTS_YES_CORE EPL (EPL, btts @ 2.00-2.10)
+
+| | n | hit% | ROI |
+|---|---|---|---|
+| **BASELINE** | 531 | 58.4% | +19.6% |
+| F: home_yc>=2 & away_yc>=2 | 141 | 61.7% | +26.3% |
+| E: home_shots+away_shots>=10 | 192 | 60.4% | +23.6% |
+| D: home_shots>=4 & away_shots>=3 | 351 | 59.0% | +20.7% |
+
+Filter F (+6.7pp) looks best but fails per-year n for 2022 (n=13) and 2025 (n=14).
+The year breakdown shows 2023-2024 are strong (hit% 73%, ROI +49%/+40%),
+but low-card years suffer.
+
+**RECOMMENDATION: NO** — filter F is close but n too small in low-card years.
+Consider a relaxed version: home_yc>=1.5 & away_yc>=1.5 for future testing.
+
+---
+
+### 3. BTTS_YES_CORE BL1 (BL1, btts @ 1.95-2.10)
+
+| | n | hit% | ROI |
+|---|---|---|---|
+| **BASELINE** | 641 | 59.3% | +19.6% |
+| E: home_shots+away_shots>=10 | 260 | 62.7% | +26.4% |
+| B: home_corners>=5 & away_corners>=4 | 249 | 57.0% | +14.7% |
+| A: home_shots>=5 & away_shots>=4 | 228 | 57.9% | +16.7% |
+
+Filter E: home_shots + away_shots >= 10
+- 2021: n=45, hit%=67%, ROI=+34% ✓
+- 2022: n=47, hit%=68%, ROI=+36% ✓
+- 2023: n=57, hit%=61%, ROI=+24% ✓
+- 2024: n=75, hit%=64%, ROI=+29% ✓
+- 2025: n=36, hit%=50%, ROI=+0% ✓ (barely non-negative)
+
+ROI improves +6.8pp. All 5 years positive. n>=15 every year.
+
+**QUALIFIES. RECOMMENDATION: ADD** `home_shots + away_shots >= 10`
+to BTTS_YES_CORE BL1 in `agent_handoff_v7.py` get_pruned_live_rule().
+
+---
+
+### 4. FL1_BTTS_DOUBLE (FL1, over2.5 1.6-1.9, btts 2.0-2.1)
+
+| | n | hit% | ROI |
+|---|---|---|---|
+| **BASELINE** | 182 | 57.1% | +16.8% |
+| A: home_yc>=2.0 | 75 | 62.7% | +28.5% |
+| C: home_shots>=5 & away_shots>=4 | 66 | 60.6% | +23.9% |
+| D: home_shots>=4.5 | 116 | 59.5% | +21.5% |
+
+Filter A gives +11.7pp — strong improvement, but years are too thin:
+2021 n=11, 2022 n=13, 2023 n=13 all < 15. ROI flips negative in 2023 (-6%).
+
+**RECOMMENDATION: NO** — per-year n too low despite strong direction.
+The 2023 negative year is also a concern (ROI=-6%).
+
+---
+
+### 5. PD_BTTS_DOUBLE (PD, over2.5 1.6-1.9, btts 1.75-1.95)
+
+| | n | hit% | ROI |
+|---|---|---|---|
+| **BASELINE** | 187 | 61.5% | +15.7% |
+| E: home_shots+away_shots>=10 | 61 | 70.5% | +33.6% |
+| C: away_shots>=4 & home_corners>=4 | 80 | 67.5% | +27.2% |
+| F: home_yc>=2.0 | 113 | 63.7% | +19.8% |
+
+Filter E gives +17.9pp — massive improvement, 5/5 positive years.
+But n=61 (≈12/year) fails the n>=15 per year test in 4 of 5 years.
+The direction is very strong though — every single year ROI improved significantly:
+2021 +46%/+48%, 2022 +18%/+62%, 2023 +31%/+69%, 2024 +11%/+58%, 2025 +58%/+83%.
+
+Filter F (home_yc>=2.0) at n=113 is closer to qualifying but only +4.1pp.
+
+**RECOMMENDATION: NO (borderline)** — filter E has exceptional direction (hit% from 61.5% to 70.5%) but n is too limited.
+Suggest collecting more data and retesting once 2026 fills in.
+If forced: filter C at n=80 is a reasonable middle ground — 5/5 positive but still n<15/year.
+
+---
+
+### 6. RPL_OVER25_BTTS (RPL, over2.5+btts combined @ 1.8-2.1)
+
+| | n | hit% | ROI |
+|---|---|---|---|
+| **BASELINE** | 173 | 57.2% | +12.4% |
+| B: home_shots+away_shots>=9 | 95 | 57.9% | +13.9% |
+| A: home_shots>=5 | 97 | 55.7% | +9.4% |
+| D: home_shots>=4.5 & away_shots>=4.0 | 74 | 56.8% | +12.0% |
+
+No filter meaningfully improves. Best is shots>=9 at +1.5pp — marginal.
+2023 loses both baseline and filtered (-5%/-33%). RPL data starts partial in 2022.
+
+**RECOMMENDATION: NO** — marginal improvements, not structurally different.
+
+---
+
+### 7. MLS_BTTS_HOME — No stats data available
+
+backtest_football_stats has 0 rows for MLS. Cannot compute rolling averages.
+
+**RECOMMENDATION: NO** — no data to test.
+
+---
+
+## Summary
+
+| Strategy | n | Base ROI | Best Filter | Fil n | Fil ROI | Diff | Qualified? |
+|----------|---|----------|-------------|-------|---------|------|------------|
+| SA_AWAY_DRAW | 137 | +39.8% | D: hc≤4.5 & ac≥3.5 | 41 | +51.0% | +11pp | NO (n<15/yr) |
+| BTTS_YES_CORE_EPL | 531 | +19.6% | F: hy≥2 & ay≥2 | 141 | +26.3% | +7pp | NO (n<15 2yr) |
+| **BTTS_YES_CORE_BL1** | **641** | **+19.6%** | **E: hs+as≥10** | **260** | **+26.4%** | **+7pp** | **YES** |
+| FL1_BTTS_DOUBLE | 182 | +16.8% | A: hy≥2.0 | 75 | +28.5% | +12pp | NO (n<15/yr) |
+| PD_BTTS_DOUBLE | 187 | +15.7% | E: hs+as≥10 | 61 | +33.6% | +18pp | NO (n<15/yr) |
+| RPL_OVER25_BTTS | 173 | +12.4% | B: hs+as≥9 | 95 | +13.9% | +2pp | NO |
+| MLS_BTTS_HOME | — | — | — | — | — | — | NO (no data) |
+
+## Only Filter That Qualifies
+
+**ADD to BTTS_YES_CORE BL1**: `home_shots_rolling_avg + away_shots_rolling_avg >= 10`
+
+- n=260, hit%=62.7%, ROI=+26.4% vs baseline +19.6%
+- Positive in 5/5 years, n>=15 every year
+- Implementation: add shot counter to rule in `get_pruned_live_rule()`
+
+## Near-Misses Worth Revisiting
+
+1. **PD_BTTS_DOUBLE + shots>=10**: +18pp improvement but n=61 too thin. Direction is very compelling (hit% 70.5%). Retest when 2026 data fills.
+2. **FL1_BTTS_DOUBLE + home_yc>=2**: +12pp, n=75 but too few per year. Retest.
+3. **EPL_BTTS + home_yc>=2 & away_yc>=2**: +7pp, n=141, but 2022/2025 too thin. Consider relaxed version (>=1.5).
